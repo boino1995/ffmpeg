@@ -1,0 +1,12 @@
+model_name: ffmpeg-transcoder-service
+resources:
+  cpu: "4"
+  memory: 8Gi
+  use_gpu: false
+system_packages:
+  - ffmpeg
+  - libsm6
+  - libxext6
+python_requirements:
+  - fastapi
+  - uvicorn
